@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage_TrangChu.master.cs" Inherits="SachOnline.MasterPage_TrangChu" %>
+
+<%@ Register src="UC_Banner.ascx" tagname="Banner" tagprefix="uc" %>
+<%@ Register src="UC_Navigation.ascx" tagname="Navigation" tagprefix="uc" %>
+<%@ Register src="UC_TheLoaiSach.ascx" tagname="TheLoaiSach" tagprefix="uc" %>
+<%@ Register src="UC_Footer.ascx" tagname="Footer" tagprefix="uc" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="FrmMasterPage_TrangChu" runat="server">
+        <table cellspacing="0" cellpadding="0" width="100%">
+            <tr>
+                <td colspan="2">
+                    <uc:Banner ID="UCBanner" runat="server" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <uc:Navigation ID="UCNavigation" runat="server" />
+                </td>
+            </tr>
+            <tr>
+                <td align="left" valign="top" width="25%">
+                    <table cellspacing="1" width="100%">
+                        <tr>
+                            <td align="center" height="30px" style="background-color: #E91E63; font-weight: bold;">THỂ LOẠI SÁCH</td>
+                        </tr>
+                        <tr>
+                            <td><uc:TheLoaiSach ID="UCTheLoaiSach" runat="server" /></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </table>
+                </td>
+                <td align="left" valign="top" width="75%">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <uc:Footer ID="UCFooter" runat="server" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,69 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage_Admin.master.cs" Inherits="SachOnline.MasterPage_Admin" %>
+
+<%@ Register src="UC_Banner.ascx" tagname="Banner" tagprefix="uc" %>
+<%@ Register src="UC_Footer.ascx" tagname="Footer" tagprefix="uc" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="FrmMasterPage_Admin" runat="server">
+        <uc:Banner ID="UCBanner" runat="server" />
+        <table cellspacing="1" width="100%">
+            <tr>
+                <td align="left" valign="top" width="25%">
+                    <table cellspacing="1" width="100%">
+                        <tr>
+                            <td align="center" height="30px" style="font-weight: bold; background-color: #E91E63;">MENU QUẢN TRỊ</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #CCCCFF; font-size: large;">
+                                <asp:HyperLink ID="HplTrangQuanTri" runat="server" Font-Underline="False" 
+                                    NavigateUrl="~/DefaultAdmin.aspx" ForeColor="#663300">Trang quản trị</asp:HyperLink>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #CCCCFF; font-size: large;">
+                                <asp:HyperLink ID="HplQuanLyNguoiDung" runat="server" Font-Underline="False" 
+                                    NavigateUrl="~/QuanLyNguoiDung.aspx" ForeColor="#663300">Quản lý người dùng</asp:HyperLink>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #CCCCFF; font-size: large;">
+                                <asp:HyperLink ID="HplQuanLyTheLoai" runat="server" Font-Underline="False" 
+                                    NavigateUrl="~/QuanLyTheLoai.aspx" ForeColor="#663300">Quản lý thể loại</asp:HyperLink>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #CCCCFF; font-size: large;">
+                                <asp:HyperLink ID="HplQuanLySach" runat="server" Font-Underline="False" 
+                                    NavigateUrl="~/QuanLySach.aspx" ForeColor="#663300">Quản lý sách</asp:HyperLink>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #CCCCFF; font-size: large;">
+                                <asp:HyperLink ID="HplDangXuat" runat="server" Font-Underline="False" 
+                                    NavigateUrl="~/Default.aspx" ForeColor="#663300">Đăng xuất</asp:HyperLink>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td align="left" valign="top" width="75%">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <uc:Footer ID="UCFooter" runat="server" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

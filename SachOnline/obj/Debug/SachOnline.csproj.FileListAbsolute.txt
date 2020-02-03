@@ -1,0 +1,5 @@
+C:\Users\tungb\Desktop\SachOnline\SachOnline\bin\SachOnline.dll
+C:\Users\tungb\Desktop\SachOnline\SachOnline\bin\SachOnline.pdb
+C:\Users\tungb\Desktop\SachOnline\SachOnline\obj\Debug\SachOnline.csprojResolveAssemblyReference.cache
+C:\Users\tungb\Desktop\SachOnline\SachOnline\obj\Debug\SachOnline.dll
+C:\Users\tungb\Desktop\SachOnline\SachOnline\obj\Debug\SachOnline.pdb
